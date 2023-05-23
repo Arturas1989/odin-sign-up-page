@@ -1,0 +1,29 @@
+:root{
+    --containerMargin: 17%;
+    --leftColumnWidth: 35%;
+    --rightColumnWidth: 65%;
+    --containerHeight: 100vh;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    width: calc(100% - var(--containerMargin)*2);
+    height: var(--containerHeight);
+    margin-left: var(--containerMargin);
+    margin-right: var(--containerMargin);
+    background-color: #fff;
+}
+
+.left-column{
+    width: var(--leftColumnWidth);
+    border: 1px solid black;
+}
+
+.right-column{
+    width: var(--rightColumnWidth);
+    border: 1px solid black;
+}
