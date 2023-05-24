@@ -4,6 +4,10 @@
     --rightColumnWidth: 63%;
     --containerHeight: 100vh;
     --leftColumnTextColor: #fff;
+    --rightColumnPaddingPercentage: 0.1;
+    --rightColumnTopBottomPadding: calc(var(--containerHeight) * var(--rightColumnPaddingPercentage));
+    --rightColumnSectionHeight: calc((var(--containerHeight)) / 3);
+    --rightColumnFirstThirdSectionBackgroundColor: #f9fafb;
 }
 @font-face {
     font-family: 'Norse-Bold';
@@ -68,10 +72,40 @@ h1{
 }
 
 .right-column{
+    display: flex;
+    flex-direction: column;
     width: var(--rightColumnWidth);
     border: 1px solid black;
     background-color: #fff;
+    
+    
 }
+
+.first-section{
+    display: flex;
+    height: var(--rightColumnSectionHeight);
+    padding-top: var(--rightColumnTopBottomPadding);
+    border: 1px solid black;
+    background-color: var(--rightColumnFirstThirdSectionBackgroundColor);
+}
+
+.second-section{
+    display: flex;
+    height: calc(var(--rightColumnSectionHeight)*2);
+    padding-bottom: var(--rightColumnTopBottomPadding);
+    border: 1px solid black;
+}
+
+.form-section1, .form-section2{
+    display: flex;
+    height: var(--rightColumnSectionHeight);
+    border: 1px solid black;
+}
+
+.form-section2{
+    background-color: var(--rightColumnFirstThirdSectionBackgroundColor);
+}
+
 
 
 
