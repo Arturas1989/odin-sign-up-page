@@ -4,10 +4,12 @@
     --rightColumnWidth: 63%;
     --containerHeight: 100vh;
     --leftColumnTextColor: #fff;
-    --rightColumnPaddingPercentage: 0.1;
+    --rightColumnPaddingPercentage: 0.15;
     --rightColumnTopBottomPadding: calc(var(--containerHeight) * var(--rightColumnPaddingPercentage));
     --rightColumnSectionHeight: calc((var(--containerHeight)) / 3);
     --rightColumnFirstThirdSectionBackgroundColor: #f9fafb;
+    --rightColumnPaddingLeft: 30px;
+    --rightColumnPaddingRight: 70px;
 }
 @font-face {
     font-family: 'Norse-Bold';
@@ -27,6 +29,7 @@ body{
     
 }
 
+/* left side */
 .left-column{
     position: relative;
     width: var(--leftColumnWidth);
@@ -70,7 +73,9 @@ h1{
 .left-column p, a{
     color: var(--leftColumnTextColor);
 }
+/* left side end */
 
+/* right side */
 .right-column{
     display: flex;
     flex-direction: column;
@@ -78,7 +83,11 @@ h1{
     border: 1px solid black;
     background-color: #fff;
     
-    
+}
+
+.first-section, .form-section1, .form-section2{
+    padding-left: var(--rightColumnPaddingLeft);
+    padding-right: var(--rightColumnPaddingRight);
 }
 
 .first-section{
@@ -87,6 +96,11 @@ h1{
     padding-top: var(--rightColumnTopBottomPadding);
     border: 1px solid black;
     background-color: var(--rightColumnFirstThirdSectionBackgroundColor);
+    font-size: 15px;
+}
+
+.first-section>strong{
+    word-break: keep-all;
 }
 
 .second-section{
@@ -105,6 +119,8 @@ h1{
 .form-section2{
     background-color: var(--rightColumnFirstThirdSectionBackgroundColor);
 }
+
+/* right side end */
 
 
 
