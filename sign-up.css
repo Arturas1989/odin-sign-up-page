@@ -173,6 +173,9 @@ form{
     padding: 5px;
     font-size: 10px;
     opacity: 0.7;
+    border-radius: 3px;
+    border-color: rgba(0,0,255,0.2);
+    border-width: 1px;
 }
 
 .input-group>input:focus-visible{
