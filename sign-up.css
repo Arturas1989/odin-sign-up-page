@@ -11,6 +11,8 @@
     --rightColumnPaddingLeft: 30px;
     --rightColumnPaddingRight: 70px;
     --formTopBottomPadding: 20px;
+    --inputColumnWidth: 40%;
+    --loginColor: #596D48;
 }
 @font-face {
     font-family: 'Norse-Bold';
@@ -71,7 +73,10 @@ h1{
     opacity: 0.8;
 }
 
-.left-column p, a{
+.left-column p{
+    color: var(--leftColumnTextColor);
+}
+.left-column a{
     color: var(--leftColumnTextColor);
 }
 /* left side end */
@@ -135,9 +140,7 @@ form{
     opacity: 0.8;
 }
 
-.form-section2{
-    background-color: var(--rightColumnFirstThirdSectionBackgroundColor);
-}
+
 
 .input-block{
     display: flex;
@@ -149,7 +152,7 @@ form{
 .input-column1, .input-column2{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: var(--inputColumnWidth);
     padding-left: var(--rightColumnPaddingLeft);
     padding-right: var(--rightColumnPaddingLeft);
 }
@@ -184,6 +187,40 @@ form{
     font-weight: 600;
 }
 
+.form-section2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--rightColumnFirstThirdSectionBackgroundColor);
+    gap: var(--formTopBottomPadding);
+    font-size: 12px;
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.login>a{
+    color: var(--loginColor);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-section2>button{
+    width: calc(var(--inputColumnWidth) * 0.8);
+    height: 30px;
+    text-transform:capitalize;
+    font-size: inherit;
+    color: var(--leftColumnTextColor);
+    background-color: var(--loginColor);
+    border-radius: 5px;
+    border-width: 0;
+}
+.form-section2>button:active{
+    border: 2px solid black;
+}
 /* right side end */
 
 
