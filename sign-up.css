@@ -177,13 +177,13 @@ form{
     font-size: 10px;
     opacity: 0.7;
     border-radius: 3px;
-    border-color: rgba(0,0,255,0.2);
-    border-width: 1px;
+    border: 1px solid #E5E7EB;
 }
 
 .input-group>input:focus-visible{
-    outline-color: rgba(0,0,255,0.3);
-    outline-width: 1px;
+    border-color: rgba(0,0,255);
+    box-shadow: 1px 1px 3px 0px rgba(0,0,255,0.3);
+    outline-width: 0px;
     font-weight: 600;
 }
 
