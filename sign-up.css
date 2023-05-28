@@ -36,7 +36,6 @@ body{
 .left-column{
     position: relative;
     width: var(--leftColumnWidth);
-    border: 1px solid black;
     background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -86,7 +85,6 @@ h1{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     background-color: #fff;
 }
 
@@ -99,7 +97,6 @@ h1{
     display: flex;
     height: var(--rightColumnSectionHeight);
     padding-top: var(--rightColumnTopBottomPadding);
-    border: 1px solid black;
     background-color: var(--rightColumnFirstThirdSectionBackgroundColor);
     font-size: 15px;
 }
@@ -112,7 +109,6 @@ h1{
     display: flex;
     height: calc(var(--rightColumnSectionHeight)*2);
     padding-bottom: var(--rightColumnTopBottomPadding);
-    border: 1px solid black;
 }
 
 form{
@@ -127,7 +123,6 @@ form{
     flex-direction: column;
     width: 100%;
     height: var(--rightColumnSectionHeight);
-    border: 1px solid black;
     padding-top: var(--formTopBottomPadding);
     padding-bottom: var(--formTopBottomPadding);
 }
